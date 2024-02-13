@@ -2,8 +2,14 @@
     "clearMocks": true,
     "moduleNameMapper": {
         "@code/(.*)": [
+            "<rootDir>/src/day1/$1",
             "<rootDir>/src/day2/$1"
         ]
     },
-    "preset": "ts-jest"
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [
+        "<rootDir>/src/__tests__/graph.ts",
+        "<rootDir>/src/__tests__/tree.ts",
+        "<rootDir>/src/__tests__/ListTest.ts"
+    ]
 }
